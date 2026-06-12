@@ -13,7 +13,7 @@ try {
     if (serviceAccount.private_key && serviceAccount.private_key.includes('dummy_key') ||
       serviceAccount.private_key.includes('MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC...')) {
       console.warn("⚠️ Using dummy service account key. Firestore will NOT work. Please replace backend/serviceAccountKey.json with your actual key.");
-      // Initialize with a dummy project ID so that admin.firestore() doesn't crash on boot
+      // Initialize with a dummy project ID so that admin.firestore() doesn't crash on 
       admin.initializeApp({ projectId: "dummy-project" });
     } else {
       admin.initializeApp({

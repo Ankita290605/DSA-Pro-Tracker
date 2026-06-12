@@ -15,9 +15,9 @@ services:
     volumes:
       - backend_data:/app/data
 
-  # ==========================================
+ 
   # React Frontend Service
-  # ==========================================
+
   frontend:
     build:
       context: ./frontend
